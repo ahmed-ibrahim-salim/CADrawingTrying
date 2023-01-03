@@ -1,17 +1,16 @@
 //
-//  ViewController.swift
+//  CADrawing.swift
 //  CADrawing
 //
-//  Created by Ahmad medo on 02/01/2023.
+//  Created by magdy khalifa on 03/01/2023.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+class CADrawing{
+    
+    
+    static func startDrawing(view: UIView){
         // vars
         var lineWidth: Double = 10.0
         var fillColor = UIColor.clear.cgColor
@@ -46,7 +45,4 @@ class ViewController: UIViewController {
 ////        animation.repeatCount = .infinity
 //        layer.add(animation, forKey: "line")
     }
-
-
 }
-

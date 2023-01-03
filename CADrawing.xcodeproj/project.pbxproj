@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		EF1139AC2963693700968BB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1139AB2963693700968BB7 /* AppDelegate.swift */; };
 		EF1139AE2963693700968BB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1139AD2963693700968BB7 /* SceneDelegate.swift */; };
-		EF1139B02963693700968BB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1139AF2963693700968BB7 /* ViewController.swift */; };
+		EF1139B02963693700968BB7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1139AF2963693700968BB7 /* MainViewController.swift */; };
 		EF1139B32963693700968BB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1139B12963693700968BB7 /* Main.storyboard */; };
 		EF1139B52963693800968BB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF1139B42963693800968BB7 /* Assets.xcassets */; };
 		EF1139B82963693800968BB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1139B62963693800968BB7 /* LaunchScreen.storyboard */; };
+		EF818347296415030097D0C1 /* CADrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF818346296415030097D0C1 /* CADrawing.swift */; };
+		EF81834B296415B30097D0C1 /* NewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF818349296415B30097D0C1 /* NewCollectionViewCell.xib */; };
+		EF81834C296415B30097D0C1 /* NewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF81834A296415B30097D0C1 /* NewCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EF1139A82963693700968BB7 /* CADrawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CADrawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF1139AB2963693700968BB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF1139AD2963693700968BB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EF1139AF2963693700968BB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF1139AF2963693700968BB7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EF1139B22963693700968BB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF1139B42963693800968BB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF1139B72963693800968BB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF1139B92963693800968BB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF818346296415030097D0C1 /* CADrawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CADrawing.swift; sourceTree = "<group>"; };
+		EF818349296415B30097D0C1 /* NewCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewCollectionViewCell.xib; sourceTree = "<group>"; };
+		EF81834A296415B30097D0C1 /* NewCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,26 @@
 		EF1139AA2963693700968BB7 /* CADrawing */ = {
 			isa = PBXGroup;
 			children = (
+				EF818348296415B30097D0C1 /* cell */,
 				EF1139AB2963693700968BB7 /* AppDelegate.swift */,
 				EF1139AD2963693700968BB7 /* SceneDelegate.swift */,
-				EF1139AF2963693700968BB7 /* ViewController.swift */,
+				EF1139AF2963693700968BB7 /* MainViewController.swift */,
+				EF818346296415030097D0C1 /* CADrawing.swift */,
 				EF1139B12963693700968BB7 /* Main.storyboard */,
 				EF1139B42963693800968BB7 /* Assets.xcassets */,
 				EF1139B62963693800968BB7 /* LaunchScreen.storyboard */,
 				EF1139B92963693800968BB7 /* Info.plist */,
 			);
 			path = CADrawing;
+			sourceTree = "<group>";
+		};
+		EF818348296415B30097D0C1 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				EF818349296415B30097D0C1 /* NewCollectionViewCell.xib */,
+				EF81834A296415B30097D0C1 /* NewCollectionViewCell.swift */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +145,7 @@
 				EF1139B82963693800968BB7 /* LaunchScreen.storyboard in Resources */,
 				EF1139B52963693800968BB7 /* Assets.xcassets in Resources */,
 				EF1139B32963693700968BB7 /* Main.storyboard in Resources */,
+				EF81834B296415B30097D0C1 /* NewCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF1139B02963693700968BB7 /* ViewController.swift in Sources */,
+				EF1139B02963693700968BB7 /* MainViewController.swift in Sources */,
 				EF1139AC2963693700968BB7 /* AppDelegate.swift in Sources */,
+				EF818347296415030097D0C1 /* CADrawing.swift in Sources */,
+				EF81834C296415B30097D0C1 /* NewCollectionViewCell.swift in Sources */,
 				EF1139AE2963693700968BB7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
