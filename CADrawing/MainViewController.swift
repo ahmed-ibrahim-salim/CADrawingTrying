@@ -34,7 +34,7 @@ extension MainViewController{
     }
     func autoScroll() {
         
-        UIView.animate(withDuration: 1,
+        UIView.animate(withDuration: 0.1,
                        delay: 0,
                        // .curveLinear animation and allowing user interaction
                        options: [.curveLinear, .allowUserInteraction],
@@ -44,7 +44,7 @@ extension MainViewController{
             guard let self = self else {return}
             
             // animating (changing) contentoffset.x with new value
-            self.collectionV.contentOffset.x += CGFloat(80)
+            self.collectionV.contentOffset.x += CGFloat(10)
         }, completion: {
             
             // when each animation completes calls func again
